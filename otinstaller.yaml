@@ -31,7 +31,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/onyphe@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/onyphe@sha256:5437d9222d0ac174c89e2b3a7116111e175d029e77b0b62dcdf2a43dfd063a75
   platforms: [linux/amd64, linux/arm64]
   command: ["pyonyphe", "summary", "ip", "{ip}"]
   output_format: json
